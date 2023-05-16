@@ -1,0 +1,78 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para la portada */
+.portada {
+    background-image: url("portada.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.portada h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.portada p {
+    font-size: 24px;
+}
+
+/* Estilos para los productos */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 40px;
+}
+
+.producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.producto img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.producto h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los enlaces */
+.enlace {
+    color: #333;
+    text-decoration: none;
+}
+
+.enlace:hover {
+    color: #666;
+}

@@ -1,0 +1,49 @@
+/* Estilos para la portada */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  p {
+    color: #666;
+    font-size: 18px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
