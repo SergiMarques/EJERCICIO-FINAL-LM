@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tienda Online - Gestión de Cuenta</title>
+    <link rel="stylesheet" type="text/css" href="usuarios.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda Online</h1>
+        <nav>
+            <ul>
+              <li><a href="index.html">Portada</a></li>
+              <li><a href="carrito.html">Carrito</a></li>
+              <li><a href="usuario.html">Gestión del Usuario</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        <!-- Menú de navegación -->
+    </header>
+    <main>
+        <h2>Gestión de Cuenta</h2>
+        <section id="profile-section">
+            <h3>Perfil de Usuario</h3>
+            <!-- Mostrar información del perfil del usuario, como nombre de usuario, correo electrónico, etc. -->
+            <p>Nombre de usuario: <span id="username"></span></p>
+            <p>Correo electrónico: <span id="email"></span></p>
+            <!-- Otras secciones y opciones relacionadas con la gestión de la cuenta -->
+        </section>
+        <section id="password-section">
+            <h3>Cambiar Contraseña</h3>
+            <form id="password-form">
+                <label for="current-password">Contraseña actual:</label>
+                <input type="password" id="current-password" name="current-password" required><br>
+                <label for="new-password">Nueva contraseña:</label>
+                <input type="password" id="new-password" name="new-password" required><br>
+                <label for="confirm-password">Confirmar nueva contraseña:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required><br>
+                <input type="submit" value="Cambiar Contraseña">
+            </form>
+        </section>
+        <!-- Otras secciones y opciones relacionadas con la gestión de la cuenta -->
+    </main>
+    <footer>
+        <p>&copy; 2023 Tienda Online. Todos los derechos reservados.</p>
+    </footer>
+    <script src="usuarios.js"></script>
+</body>
+</html>
