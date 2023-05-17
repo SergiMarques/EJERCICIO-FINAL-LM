@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producto - Opticor Vandalo</title>
+  <link rel="stylesheet" type="text/css" href="productos.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Tienda de Armas</h1>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <div class="product-details">
+      <div class="product-image">
+        <img src="/AAFinal/imagenes/opticor.jpg" alt="Opticor Vandalo">
+      </div>
+      <div class="product-info">
+        <h3>Opticor Vandalo</h3>
+        <div class="feature">
+          <p class="feature-type">Tipo:</p>
+          <p class="feature-info">Charge</p>
+        </div>
+        <div class="feature">
+            <p class="feature-type">Munición en el cargador:</p>
+            <p class="feature-info">8 shots</p>
+          </div>
+          <div class="feature">
+            <p class="feature-type">Munición maxima:</p>
+            <p class="feature-info">200 shots</p>
+          </div>
+    
+        <div class="feature">
+          <p class="feature-type">Velocidad de recarga:</p>
+          <p class="feature-info">1,40s</p>
+        </div>
+        <div class="feature">
+            <p class="feature-type">Cadencia de fuego:</p>
+            <p class="feature-info">2,00 shot/s</p>
+          </div>
+          <div class="feature">
+            <p class="feature-type">Tiempo para obtener carga total:</p>
+            <p class="feature-info">0,6s</p>
+          </div>
+        <div class="feature">
+            <p class="feature-type">Prob Critica:</p>
+            <p class="feature-info">24,00%</p>
+          </div>
+          <div class="feature">
+            <p class="feature-type">Prob de estados:</p>
+            <p class="feature-info">30,00%</p>
+          </div>
+          <div class="feature">
+            <p class="feature-type">Multiplicador critico:</p>
+            <p class="feature-info">2,6X</p>
+          </div>
+          <div class="feature">
+            <p class="feature-type">Daño Total:</p>
+            <p class="feature-info">400</p>
+          </div>
+        <div class="feature">
+          <p class="feature-type">Precio:</p>
+          <p class="feature-info" id="price">$59.99</p>
+        </div>
+        <div class="quantity">
+          <label for="quantity-input">Cantidad:</label>
+          <input id="quantity-input" type="number" min="1" value="1" onchange="updatePrice()">
+        </div>
+        <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>Tienda de Armas &copy; 2023</p>
+  </footer>
+
+  <!-- Función para agregar al carrito -->
+  <script>
+    function agregarAlCarrito() {
+      var quantity = document.getElementById('quantity-input').value;
+      // Aquí puedes agregar la lógica para agregar el producto al carrito con la cantidad seleccionada
+      alert("Se agregaron " + quantity + " unidades del producto al carrito.");
+    }
+
+    function updatePrice() {
+      var quantity = document.getElementById('quantity-input').value;
+      var price = 59.99 * quantity; // Precio proporcional a la cantidad seleccionada
+      document.getElementById('price').textContent = "$" + price.toFixed(2);
+    }
+  </script>
+</body>
+</html>

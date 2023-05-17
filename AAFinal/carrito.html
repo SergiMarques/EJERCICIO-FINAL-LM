@@ -12,7 +12,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Portada</a></li>
-        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="productos.html">Productos</a></li>
         <li><a href="usuario.html">Gestión del Usuario</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
@@ -25,5 +25,15 @@
   </main>
 
   <script src="enlace.js"></script>
+  <script>
+    var cartItems = document.getElementById('cart-items');
+
+    for (var i = 0; i < carrito.length; i++) {
+      var product = carrito[i];
+      var li = document.createElement('li');
+      li.textContent = product.nombre + ' - Precio: ' + product.precio;
+      cartItems.appendChild(li);
+    }
+  </script>
 </body>
 </html>

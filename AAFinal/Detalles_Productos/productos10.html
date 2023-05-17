@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producto - Invocador de Necramech</title>
+  <link rel="stylesheet" type="text/css" href="productos.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Tienda de Armas</h1>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <div class="product-details">
+      <div class="product-image">
+        <img src="/AAFinal/imagenes/Necra.jpg" alt="Invocador de Necramech">
+      </div>
+      <div class="product-info">
+        <h3>Invocador de Necramech</h3>
+        <div class="feature">
+          <p class="feature-type">Tipo:</p>
+          <p class="feature-info">Armadura</p>
+        </div>
+        <div class="feature">
+          <p class="feature-type">Primera habilidad:</p>
+          <p class="feature-info">NecraWeb:</p>
+          <p class="feature-description">Granada que genera una area la cual ralentiza.</p>
+        </div>
+        <div class="feature">
+          <p class="feature-type">Segunda habilidad:</p>
+          <p class="feature-info">Storm Shroud:</p>
+          <p class="feature-description">SobreEscudo el cual absorbe daño los primeros 3s para añadirlo a su aguante base.</p>
+        </div>
+        <div class="feature">
+          <p class="feature-type">Tercera habilidad:</p>
+          <p class="feature-info">Gravemines:</p>
+          <p class="feature-description">Lanzamiento de grandas sin ton ni son.</p>
+        </div>
+        <div class="feature">
+          <p class="feature-type">Cuarta habilidad:</p>
+          <p class="feature-info">Guard Mode:</p>
+          <p class="feature-description">Clavas el Necramech al suelo para empezar a usar la artilleria pesada sin retroceso.</p>
+        </div>
+        <div class="feature">
+          <p class="feature-type">Escudos:</p>
+          <p class="feature-info">500</p>
+        </div>
+        <div class="feature">
+          <p class="feature-type">Salud:</p>
+          <p class="feature-info">1500</p>
+        </div>
+        <div class="feature">
+          <p class="feature-type">Armadura:</p>
+          <p class="feature-info">400</p>
+        </div>
+        <div class="feature">
+          <p class="feature-type">Energía:</p>
+          <p class="feature-info">150</p>
+        </div>
+        <div class="feature">
+          <p class="feature-type">Precio:</p>
+          <p class="feature-info" id="price">$500.00</p>
+        </div>
+        <div class="quantity">
+          <label for="quantity-input">Cantidad:</label>
+          <input id="quantity-input" type="number" min="1" value="1" onchange="updatePrice()">
+        </div>
+        <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>Tienda de Armas &copy; 2023</p>
+  </footer>
+
+  <!-- Función para agregar al carrito -->
+  <script>
+    function agregarAlCarrito() {
+      var quantity = document.getElementById('quantity-input').value;
+      // Aquí puedes agregar la lógica para agregar el producto al carrito con la cantidad seleccionada
+      alert("Se agregaron " + quantity + " unidades del producto al carrito.");
+    }
+
+    function updatePrice() {
+      var quantity = document.getElementById('quantity-input').value;
+      var price = 500.00 * quantity; // Precio proporcional a la cantidad seleccionada
+      document.getElementById('price').textContent = "$" + price.toFixed(2);
+    }
+  </script>
+</body>
+</html>
