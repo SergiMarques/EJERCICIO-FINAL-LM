@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="file.xsl" type="text/xsl"?>
 <catalog>
-    <
+    <producto>
+        <nombre>Producto</nombre>
+        <cantidad>6</cantidad>
+    </producto>
+    <producto>
+        <nombre>Producto</nombre>
+        <cantidad>6</cantidad>
+    </producto>
+    <producto>
+        <nombre>Producto</nombre>
+        <cantidad>6</cantidad>
+    </producto>
+    <producto>
+        <nombre>Producto</nombre>
+        <cantidad>9</cantidad>
+    </producto>
+    <producto></producto>
+    <producto></producto>
+    <producto></producto>
+    <producto></producto>
+    <producto></producto>
+    <producto></producto>
+    <producto></producto>
 </catalog>
