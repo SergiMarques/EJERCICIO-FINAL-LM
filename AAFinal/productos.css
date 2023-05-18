@@ -1,97 +1,105 @@
+/* Estilos para la página del carrito */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    color: #333;
-    font-size: 32px;
-    margin: 0;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
-  }
-  
-  .product {
-    border: 1px solid #ccc;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .product img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .product h3 {
-    margin: 10px 0;
-  }
-  
-  .product p {
-    color: #666;
-  }
-  
-  .product .details-link {
-    display: block;
-    margin-bottom: 10px;
-    color: blue;
-    text-decoration: underline;
-  }
-  
-  .product .add-to-cart {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  /* Estilos para la barra de navegación */
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  font-size: 32px;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 nav li {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 nav li a {
-    display: inline-block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
 }
 
 nav li a:hover {
-    background-color: #333;
-    color: #fff;
+  background-color: #333;
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+}
+
+.carrito {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.producto img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.producto .info {
+  flex-grow: 1;
+}
+
+.producto h3 {
+  margin: 0;
+}
+
+.producto p {
+  color: #666;
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.comprar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.comprar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }

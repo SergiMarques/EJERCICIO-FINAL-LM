@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carrito de Compras</title>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"-->
   <link rel="stylesheet" type="text/css" href="carrito.css">
 </head>
+
+
+
+<!--  Todo esto es basicamente el carrito tienes que hacer un XML con un for-->
+
 <body>
+  <!-- Encabezado -->
   <header>
-    <h1>Carrito de Compras</h1>
+    <h1>Tienda de Armas</h1>
     <nav>
       <ul>
         <li><a href="index.html">Portada</a></li>
@@ -17,23 +25,136 @@
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
+    <!--Todo esto hasta el siguiente comentario es sacado de video se puede borrar para volver a como estaba antes-->
+    <!--<div>
+      <ul>
+        <li class="submenu">
+          <img src="/AAFinal/imagenes/car.svg" id="img-carrito" alt="">
+          <div id="carrito">
+            <table id="lista-carrito">
+              <thead>
+                <tr>
+                  <th>Imagen</th>
+                  <th>Nombre</th>
+                  <th>Precio</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+          </div>
+        </li>
+      </ul>
+    </div> -->
   </header>
 
+  <!-- Contenido principal -->
   <main>
-    <h2>Productos en el carrito:</h2>
-    <ul id="cart-items"></ul>
+    <section class="products container" id="lista-1">
+    <div class="grid-container" >
+      <div class="product">
+        <img src="/AAFinal/imagenes/StrunPrime.jpg" alt="StrunPrime">
+        <h3>Strun Prime</h3>
+        <p>Además de ser una actualización directa, ha ganado fuerza innata a través de un rango de caída de daño más
+          largo, pero a expensas de una velocidad de recarga más lenta. </p>
+        <p class="precio">Precio: $19.99</p>
+        <a class="details-link" href="/AAFinal/Detalles_Productos/productos1.html">Ver detalles</a>
+        <!-- <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a> -->
+       <!-- <button class="add-to-cart" data-id="1" onclick="insertarCarrito({id: '12123', imagen: '/AAFinal/imagenes/StrunPrime.jpg', titulo: 'asdsad', precio: '30'})">Agregar al carrito</button>-->
+       <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+      <div class="product">
+        <img src="/AAFinal/imagenes/GenStrun.jpg" alt="GenStrun">
+        <h3>Gen Strun</h3>
+        <p>Mejora genetica incarnon para cualquier variación de la Strun</p>
+        <p>Precio: $29.99</p>
+        <a class="details-link" href="/AAFinal/Detalles_Productos/productos2.html">Ver detalles</a>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+      <div class="product">
+        <img src="/AAFinal/imagenes/Zenith.jpg" alt="Zenith">
+        <h3>Zenith</h3>
+        <p>Rifle de asalto con modo alternativo, el cual se vuelve rifle de francotirador con atravesar infinito</p>
+        <p>Precio: $40.00</p>
+        <a class="details-link" href="/AAFinal/Detalles_Productos/productos3.html">Ver detalles</a>
+        <button class="add-to-cart" onclick="agregarAlCarrito('Zenith', 40.00)">Agregar al carrito</button>
+      </div>
+      <div class="product">
+        <img src="/AAFinal/imagenes/mios.jpg" alt="Mios">
+        <h3>Mios</h3>
+        <p> Es una Espada latigo infestada. Aparte de cortat como ningua tambien despedaza a sus presas</p>
+        <p>Precio: $15.00</p>
+        <a class="details-link" href="/AAFinal/Detalles_Productos/productos4.html">Ver detalles</a>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+      <div class="product">
+        <img src="/AAFinal/imagenes/bramma.jpg" alt="bramma">
+        <h3>Bramma</h3>
+        <p>Es un enorme arco Kuva. que dispara flechas que producen una gran Explosión al impactar, mientras deposita
+          bombas de racimo</p>
+        <p>Precio: $40.00</p>
+        <a class="details-link" href="/AAFinal/Detalles_Productos/productos5.html">Ver detalles</a>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+      <div class="product">
+        <img src="/AAFinal/imagenes/zarr.jpg" alt="zarr">
+        <h3>Zarr Kuva</h3>
+        <p>Alguna vez has querido sentirte como un pirata?. Pues os presetamos la Zarr Kuva un cañon de barco mejor que
+          su verison original, la cual lanza bolas de cañon a racimo</p>
+        <p>Precio: $45.00</p>
+        <a class="details-link" href="/AAFinal/Detalles_Productos/productos6.html">Ver detalles</a>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+      <div class="product">
+        <img src="/AAFinal/imagenes/glaive.jpg" alt="glaive">
+        <h3>Glaive Prime</h3>
+        <p>Esta majestuosa hoja circular de triple filo puede rebanar a un sin fin de objetivos con la particularidad de
+          que siempre vuelve</p>
+        <p>Precio: $50.00</p>
+        <a class="details-link" href="/AAFinal/Detalles_Productos/productos7.html">Ver detalles</a>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+      <div class="product">
+        <img src="/AAFinal/imagenes/opticor.jpg" alt="opticor">
+        <h3>Opticor Vandalo</h3>
+        <p>Cañon laser que necesita una carga previa antes de lanzar su rayo demoledor, el cual tiene unos 5m de
+          atravesar dependiedo el material con el que choque</p>
+        <p>Precio: $59.99</p>
+        <a class="details-link" href="/AAFinal/Detalles_Productos/productos8.html">Ver detalles</a>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+      <div class="product">
+        <img src="/AAFinal/imagenes/ammo.jpg" alt="ammo">
+        <h3>Paquete de munición de escuadron</h3>
+        <p>Paquete de munición que puede suministrar toda la munucion de un escuadron formado por 4 integrantes dando
+          igual que arma lleve cada uno.</p>
+        <p>Precio: $79.99</p>
+        <a class="details-link" href="/AAFinal/Detalles_Productos/productos9.html">Ver detalles</a>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+      <div class="product">
+        <img src="/AAFinal/imagenes/Necra.jpg" alt="Necra">
+        <h3>Invocador de Necramech</h3>
+        <p>Soldado mecanico pilotable. El Necramech puede ser llevado a donde sea gracias a su Invocador.</p>
+        <p>Precio: $500.00</p>
+        <a class="details-link" href="/AAFinal/Detalles_Productos/productos10.html">Ver detalles</a>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+      <!-- Agrega más productos según sea necesario -->
+    </div>
+  </section>
   </main>
 
-  <script src="enlace.js"></script>
-  <script>
-    var cartItems = document.getElementById('cart-items');
+  <!-- Pie de página -->
+  <footer>
+    <p>Tienda de Armas &copy; 2023</p>
+  </footer>
 
-    for (var i = 0; i < carrito.length; i++) {
-      var product = carrito[i];
-      var li = document.createElement('li');
-      li.textContent = product.nombre + ' - Precio: ' + product.precio;
-      cartItems.appendChild(li);
-    }
-  </script>
+  <!-- Scripts -->
+  <script src="/JS/script.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"</script>-->
+
 </body>
+
 </html>
