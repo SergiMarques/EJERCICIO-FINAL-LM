@@ -2,18 +2,23 @@
 <!DOCTYPE xsl:stylesheet [
   <!ENTITY copy "entity-value">
 ]>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:media="http://search.yahoo.com/mrss/">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:media="http://search.yahoo.com/mrss/">
 
   <xsl:template match="/">
     <html>
       <head>
-        <link rel="stylesheet" href="productos.css" type="text/css"/>
-        <title>Tienda de Armas</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Carrito de Compras</title>
+        <!-- <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"-->
+        <link rel="stylesheet" type="text/css" href="carrito.css" />
       </head>
       <body>
         <header>
           <h1>
-         <xsl:value-of select="catalog/producto[1]/nombre"/>
+            <xsl:value-of select="catalog/@name" />
           </h1>
         </header>
         <nav>
@@ -27,33 +32,29 @@
             <li>
               <a href="contacto.html">Contactos</a>
             </li>
-             <li>
+            <li>
               <a href="usuario.html">Gestion de Usuario</a>
             </li>
           </ul>
         </nav>
         <main>
-          <div class="carrito">
-            <xsl:for-each select="catalog/producto">
-              <div class="producto">
-                <img src="{media:content/@url}" alt="{media:content/media:description}"/>
-                <div class="info">
+          <section class="products container" id="lista-1">
+            <div class="grid-container">
+              <xsl:for-each select="catalog/producto">
+                <div class="product">
+                  <img src="{media:content/@url}" alt="{media:content/media:description}" />
                   <h3>
-                    <xsl:value-of select="nombre"/>
+                    <xsl:value-of select="nombre" />
                   </h3>
-                  <p>Precio: <xsl:value-of select="precio"/></p>
-                  <p>Cantidad: <xsl:value-of select="cantidad"/></p>
+                  <p>Precio: <xsl:value-of select="precio" /></p>
+                  <p>Cantidad: <xsl:value-of select="cantidad" /></p>
                 </div>
-              </div>
-            </xsl:for-each>
-            <div class="total">
-              Total: $XXX.XX
+              </xsl:for-each>
+              <!-- Agrega más productos según sea necesario -->
             </div>
-            <div class="comprar">
-              <button>Comprar</button>
-            </div>
-          </div>
+          </section>
         </main>
+
         <footer>
           Derechos reservados &copy; 2023
         </footer>

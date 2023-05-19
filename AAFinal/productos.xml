@@ -17,6 +17,21 @@
         <cantidad>6</cantidad>
     </producto>
 
+        <producto>
+        <nombre>Espada laser</nombre>
+        <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://static.wikia.nocookie.net/warframe/images/0/0d/StrunIncarnonGenesis.png"></media:content>
+         <tipo>Escopeta semi-automatica</tipo>
+        <munición_max>46 shots</munición_max>
+       <disparo>Tiro único con AoE</disparo>
+        <cadencia>2,50 shot/s</cadencia>
+        <prob_crit>48,00%</prob_crit>
+        <prob_estado>46,00%</prob_estado>
+        <mult_ciritco>3,4X</mult_ciritco>
+        <daño_total>100</daño_total>
+        <precio>$29.99</precio>
+        <cantidad>3</cantidad>
+    </producto>
+
     <producto>
         <nombre>Gen Strun</nombre>
         <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://static.wikia.nocookie.net/warframe/images/0/0d/StrunIncarnonGenesis.png"></media:content>
@@ -50,7 +65,7 @@
 
     <producto>
         <nombre>Bramma Kuva</nombre>
-        <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://static.wikia.nocookie.net/warframe/images/5/52/Bramma_Kuva.png"></media:content>
+        <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://static.wikia.nocookie.net/warframe/images/5/52/Bramma_Kuva.png/revision/latest/scale-to-width-down/220?cb=20200817111425&amp;path-prefix=es"></media:content>
          <tipo>Arco de racimo</tipo>
         <cargador>5 shots</cargador>
         <vel>50 m/s</vel>
