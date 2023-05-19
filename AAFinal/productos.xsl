@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xsl:stylesheet [
+  <!ENTITY copy "entity-value">
+]>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:media="http://search.yahoo.com/mrss/">
 
   <xsl:template match="/">
@@ -10,19 +13,22 @@
       <body>
         <header>
           <h1>
-            <xsl:value-of select="catalog/producto/nombre"/>
+         <xsl:value-of select="catalog/producto[1]/nombre"/>
           </h1>
         </header>
         <nav>
           <ul>
             <li>
-              <a href="#">Inicio</a>
+              <a href="index.html">Inicio</a>
             </li>
             <li>
-              <a href="#">Productos</a>
+              <a href="carrito.html">Carrito</a>
             </li>
             <li>
-              <a href="#">Carrito</a>
+              <a href="contacto.html">Contactos</a>
+            </li>
+             <li>
+              <a href="usuario.html">Gestion de Usuario</a>
             </li>
           </ul>
         </nav>

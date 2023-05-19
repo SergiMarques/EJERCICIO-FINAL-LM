@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="productos.xsl" type="text/xsl"?>
-<catalog>
+<catalog name="Tienda de Armas">
     <producto>
         <nombre>Strun Prime</nombre>
+        <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://static.wikia.nocookie.net/warframe/images/d/d0/StrunPrime.png"></media:content>
         <tipo>Escopeta semi-automatica</tipo>
         <cargador>10 shots</cargador>
         <munición_max>120 shots</munición_max>
@@ -18,6 +19,7 @@
 
     <producto>
         <nombre>Gen Strun</nombre>
+        <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://static.wikia.nocookie.net/warframe/images/0/0d/StrunIncarnonGenesis.png"></media:content>
          <tipo>Escopeta semi-automatica</tipo>
         <munición_max>46 shots</munición_max>
        <disparo>Tiro único con AoE</disparo>
@@ -32,6 +34,7 @@
 
     <producto>
         <nombre>Zenith</nombre>
+         <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://static.wikia.nocookie.net/warframe/images/6/66/Zenith.png"></media:content>
          <tipo>Rifle automática -- semi-automática</tipo>
         <cargador>90 shots</cargador>
         <munición_max>540 shots</munición_max>
@@ -47,6 +50,7 @@
 
     <producto>
         <nombre>Bramma Kuva</nombre>
+        <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://static.wikia.nocookie.net/warframe/images/5/52/Bramma_Kuva.png"></media:content>
          <tipo>Arco de racimo</tipo>
         <cargador>5 shots</cargador>
         <vel>50 m/s</vel>
@@ -62,6 +66,7 @@
 
     <producto>
     <nombre>Zarr Kuva</nombre>
+    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://static.wikia.nocookie.net/warframe/images/f/fb/KuvaZarr.png"></media:content>
         <tipo>Escopeta semi-automatica</tipo>
         <cargador>5 shots</cargador>
         <munición_max>5 shots</munición_max>
@@ -77,6 +82,7 @@
 
     <producto>
     <nombre>Mios</nombre>
+    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://static.wikia.nocookie.net/warframe/images/c/c8/Mios.png"></media:content>
         <tipo>Espada y látigo</tipo>
         <rango>2,50m</rango>
         <vel>1,08</vel>
@@ -90,13 +96,42 @@
         <cantidad>20</cantidad>
     </producto>
 
-    <producto></producto>
+    <producto>
+    <nombre>Glaive Prime</nombre>
+        <tipo>Glaive</tipo>
+        <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://static.wikia.nocookie.net/warframe/images/8/8d/GlaivePrime.png"></media:content>
+        <rango></rango>
+        <vel></vel>
+        <velpro></velpro>
+        <disposición></disposición>
+        <lanzamiento></lanzamiento>
+        <prob_crit></prob_crit>
+        <prob_estado></prob_estado>
+        <mult_ciritco></mult_ciritco>
+        <daño_total></daño_total>
+        <precio></precio>
+        <cantidad>6</cantidad>
+    </producto>
+
+    <producto>
+    <nombre>Invocador de Necramech</nombre>
+        <tipo>Armadura</tipo>
+        <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://static.wikia.nocookie.net/warframe/images/c/c3/Invocar_Necramech.png"></media:content>
+        <hab1></hab1>
+        <hab2></hab2>
+        <hab3></hab3>
+        <hab4></hab4>
+        <escudo></escudo>
+        <salud></salud>
+        <armadura></armadura>
+        <energia></energia>
+        <precio></precio>
+        <cantidad>1</cantidad>
+    </producto>
+
+   <!-- <producto></producto>
 
     <producto></producto>
 
-    <producto></producto>
-
-    <producto></producto>
-
-    <producto></producto>
+    <producto></producto> -->
 </catalog>
