@@ -2,26 +2,75 @@
 <?xml-stylesheet href="file.xsl" type="text/xsl"?>
 <catalog>
     <producto>
-        <nombre>Producto</nombre>
+        <nombre>Strun Prime</nombre>
+        <tipo>Escopeta semi-automatica</tipo>
+        <cargador>10 shots</cargador>
+        <munición_max>120 shots</munición_max>
+        <recarga>4,60s</recarga>
+        <cadencia>3,33 shot/s</cadencia>
+        <prob_crit>24,00%</prob_crit>
+        <prob_estado>6,67% por proyectil</prob_estado>
+        <mult_ciritco>2,2X</mult_ciritco>
+        <daño_total>528</daño_total>
+        <precio>$19.99</precio>
         <cantidad>6</cantidad>
     </producto>
+
+    <producto>
+        <nombre>Gen Strun</nombre>
+         <tipo>Escopeta semi-automatica</tipo>
+        <munición_max>46 shots</munición_max>
+       <disparo>Tiro único con AoE</disparo>
+        <cadencia>2,50 shot/s</cadencia>
+        <prob_crit>48,00%</prob_crit>
+        <prob_estado>46,00%</prob_estado>
+        <mult_ciritco>3,4X</mult_ciritco>
+        <daño_total>100</daño_total>
+        <precio>$29.99</precio>
+        <cantidad>3</cantidad>
+    </producto>
+
     <producto>
         <nombre>Producto</nombre>
+         <tipo>Escopeta semi-automatica</tipo>
+        <cargador></cargador>
+        <munición_max></munición_max>
+        <recarga></recarga>
+        <cadencia></cadencia>
+        <prob_crit></prob_crit>
+        <prob_estado></prob_estado>
+        <mult_ciritco></mult_ciritco>
+        <daño_total></daño_total>
+        <precio>$19.99</precio>
         <cantidad>6</cantidad>
     </producto>
+
     <producto>
         <nombre>Producto</nombre>
-        <cantidad>6</cantidad>
-    </producto>
-    <producto>
-        <nombre>Producto</nombre>
+         <tipo>Escopeta semi-automatica</tipo>
+        <cargador></cargador>
+        <munición_max></munición_max>
+        <recarga></recarga>
+        <cadencia></cadencia>
+        <prob_crit></prob_crit>
+        <prob_estado></prob_estado>
+        <mult_ciritco></mult_ciritco>
+        <daño_total></daño_total>
+        <precio>$19.99</precio>
         <cantidad>9</cantidad>
     </producto>
+
     <producto></producto>
+
     <producto></producto>
+
     <producto></producto>
+
     <producto></producto>
+
     <producto></producto>
+
     <producto></producto>
+
     <producto></producto>
 </catalog>
