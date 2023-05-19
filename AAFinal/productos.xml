@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="file.xsl" type="text/xsl"?>
+<?xml-stylesheet href="productos.xsl" type="text/xsl"?>
 <catalog>
     <producto>
         <nombre>Strun Prime</nombre>
@@ -31,38 +31,64 @@
     </producto>
 
     <producto>
-        <nombre>Producto</nombre>
-         <tipo>Escopeta semi-automatica</tipo>
-        <cargador></cargador>
-        <munición_max></munición_max>
-        <recarga></recarga>
-        <cadencia></cadencia>
-        <prob_crit></prob_crit>
-        <prob_estado></prob_estado>
-        <mult_ciritco></mult_ciritco>
-        <daño_total></daño_total>
-        <precio>$19.99</precio>
-        <cantidad>6</cantidad>
+        <nombre>Zenith</nombre>
+         <tipo>Rifle automática -- semi-automática</tipo>
+        <cargador>90 shots</cargador>
+        <munición_max>540 shots</munición_max>
+        <recarga>1,40s</recarga>
+        <cadencia>10,83 shot/s -- 3,00 shot/s</cadencia>
+        <prob_crit>10,00% -- 35,00%</prob_crit>
+        <prob_estado>34,00% -- 8,00%</prob_estado>
+        <mult_ciritco>2,0X -- 2,5X</mult_ciritco>
+        <daño_total>30 -- 150</daño_total>
+        <precio>$40.00</precio>
+        <cantidad>4</cantidad>
     </producto>
 
     <producto>
-        <nombre>Producto</nombre>
-         <tipo>Escopeta semi-automatica</tipo>
-        <cargador></cargador>
-        <munición_max></munición_max>
-        <recarga></recarga>
-        <cadencia></cadencia>
-        <prob_crit></prob_crit>
-        <prob_estado></prob_estado>
-        <mult_ciritco></mult_ciritco>
-        <daño_total></daño_total>
-        <precio>$19.99</precio>
-        <cantidad>9</cantidad>
+        <nombre>Bramma Kuva</nombre>
+         <tipo>Arco de racimo</tipo>
+        <cargador>5 shots</cargador>
+        <vel>50 m/s</vel>
+        <recarga>0,4s</recarga>
+        <cadencia>0,67 shot/s</cadencia>
+        <prob_crit>35,00%</prob_crit>
+        <prob_estado>21,00%</prob_estado>
+        <mult_ciritco>2,1X</mult_ciritco>
+        <daño_total>187 -- Aoe 839</daño_total>
+        <precio>$40.00</precio>
+        <cantidad>2</cantidad>
     </producto>
 
-    <producto></producto>
+    <producto>
+    <nombre>Zarr Kuva</nombre>
+        <tipo>Escopeta semi-automatica</tipo>
+        <cargador>5 shots</cargador>
+        <munición_max>5 shots</munición_max>
+        <recarga>4,80s</recarga>
+        <cadencia>2,17 shot/s</cadencia>
+        <prob_crit>25,00%</prob_crit>
+        <prob_estado>31,00%</prob_estado>
+        <mult_ciritco>2,5X</mult_ciritco>
+        <daño_total>673</daño_total>
+        <precio>$45.00</precio>
+        <cantidad>5</cantidad>
+    </producto>
 
-    <producto></producto>
+    <producto>
+    <nombre>Mios</nombre>
+        <tipo>Espada y látigo</tipo>
+        <rango>2,50m</rango>
+        <vel>1,08</vel>
+        <disposición>4/5</disposición>
+        <cadencia>2,17 shot/s</cadencia>
+        <prob_crit>19,00%</prob_crit>
+        <prob_estado>25,00%</prob_estado>
+        <mult_ciritco>2,0X</mult_ciritco>
+        <daño_total>177</daño_total>
+        <precio>$15.00</precio>
+        <cantidad>20</cantidad>
+    </producto>
 
     <producto></producto>
 
